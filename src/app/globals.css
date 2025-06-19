@@ -80,9 +80,9 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  /* * {
+    @apply border ; needs to be fixed
+  } */
   body {
     @apply bg-background text-foreground;
   }
