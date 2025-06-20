@@ -20,11 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={`${menrope.className} bg-[#171717] antialiased`}>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${menrope.className} bg-[#171717] antialiased`}
+          suppressHydrationWarning
+        >
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="system"
+            enableSystem
             disableTransitionOnChange
           >
             {children}
