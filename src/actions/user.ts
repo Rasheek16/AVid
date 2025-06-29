@@ -1,6 +1,7 @@
 "use server";
 
 import { currentUser } from "@clerk/nextjs/server";
+import { use } from "react";
 
 export const onAuthenticateUser = async () => {
   try {
@@ -8,7 +9,13 @@ export const onAuthenticateUser = async () => {
 
     if (!user) {
       // Redirect to sign-in page if user is not authenticated
-      throw new Error("User not found");
+      return { status: 403 };
     }
+
+    // const exisitingUser = await db.user.findUnique({
+    //   where: {
+    //     clerkId: user.id,
+    //   },
+    // });
   } catch (error) {}
 };
