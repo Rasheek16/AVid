@@ -26,7 +26,7 @@ model User {
   trail     Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  workspace Workspace[]
+  workspace WorkSpace[]
 }
 
 enum PRESET{
@@ -46,7 +46,7 @@ model Media{
 
 }
 
-model Workspace{
+model WorkSpace{
   id String @id @default(dbgenerated("gen_random_uuid")) @db.Uuid
   name String 
   User User? @relation(fields: [userId], references: [id])
