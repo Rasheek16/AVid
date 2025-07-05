@@ -69,7 +69,7 @@ export const onAuthenticateUser = async () => {
     });
     if (newUser) {
       return {
-        status: 200,
+        status: 201,
         user: newUser,
       };
     }
