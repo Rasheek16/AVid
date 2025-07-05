@@ -9,7 +9,7 @@ export const LandingPageNavbar = (props: Props) => {
     <div className="flex w-full justify-between items-center">
       <div className="text-3xl font-semibold flex items-center gap-x-3">
         <MenuIcon className="w-6 h-6" />
-        <Image alt="logo" src="/AVid.png" width={50} height={50} />
+        <Image alt="logo" src="/Final.png" width={75} height={75} />
         AVid
       </div>
       <div className="hidden gap-x-10 items-center lg:flex">
