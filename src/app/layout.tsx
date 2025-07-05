@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning className="dark">
         <body
-          className={`${menrope.className} bg-[#171717] antialiased`}
+          className={`${menrope.className}  antialiased`}
           suppressHydrationWarning
         >
           <ThemeProvider
